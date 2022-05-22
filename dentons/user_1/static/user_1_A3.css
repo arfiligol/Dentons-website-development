@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+.case_search {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #9C5FB5;
+}
+
+.case_search h2 {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 35px;
+    color: white;
+    background-color: #6D2E91;
+}
+
+table {
+    background-color: #6D2E91;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+tr {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+th {
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+td {
+    font-size: 25px;
+    color: white;
+}
+
+td a {
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+td a:hover {
+    cursor: pointer;
+    background-color: #9C5FB5;
+}

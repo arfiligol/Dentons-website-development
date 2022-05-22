@@ -1,0 +1,51 @@
+form {
+    display: inline-block;
+  }
+  
+  body {
+    margin: 0px;
+    height: auto;
+    background-color: white;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    padding: 0px 20px;
+    margin: 0px;
+    border: 0px;
+    background-color: #682482;
+  }
+  
+  .navigation .MENU {
+    color: white;
+  }
+  
+  .navigation .nav_button {
+    display: flex;
+  }
+  
+  .navigation .nav_func_column {
+      margin-right: 50px;
+  
+    }
+  
+  .navigation .nav_func_column a {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .navigation .logout a {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }

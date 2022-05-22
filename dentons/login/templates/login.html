@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="{{ url_for('Login.static', filename='login.css') }}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    </head>
+    <body>
+        <div class="title_block">
+            <h1>大成台灣律師事務所<br>利益衝突檢索系統</br></h1>
+          </div>
+          <div class="login_block">
+            <form id="login" action="{{ url_for('Login.login') }}" method="post">
+              <h1>Login</h1>
+              <hr></hr>
+              <div class="account_block">
+                <label for="username">
+                  <div class="icon">
+                      <i class="fas fa-user"></i>
+                  </div>
+                  <input type="text" name="username" placeholder="Username" required>
+                </label>
+                <label for="password">
+                  <div class="icon">
+                      <i class="fas fa-lock"></i>
+                  </div>
+                  <input type="password" name="password" placeholder="Password" required>
+                </label>
+              </div>
+              <div class="msg">
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    {% for message in messages %}
+                      {{ message }}
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+              </div>
+              <input type="submit" value="Login">
+            </form>
+          </div>          
+    </body>
+</html>

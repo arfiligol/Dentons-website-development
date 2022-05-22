@@ -1,0 +1,37 @@
+{% extends "user_1_base.html" %}
+{% block title %}案件登入{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_A1.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="case_login">
+        <form action="{{ url_for('user_1.A1') }}" method="POST">
+            <select name="personal_or_company_select">
+                {% for pers_or_com_id, pers_or_com in pers_or_com %}
+                    <option value="{{ pers_or_com_id }}">{{ pers_or_com }}</option>
+                {% endfor %}
+            </select>
+            <label for="identity_id">
+                <p>身分證字號/公司編號</p>
+                <input type="text" name="identity_id" id="identity_id" placeholder="ex:F101010101 (可空白)">
+            </label>
+            <label for="name">
+                <p>姓名/公司名稱</p>
+                <input type="text" name="name" id="name" placeholder="ex:大成台灣律師事務所" required>
+            </label>
+            <label for="cause">
+                <p>案由</p>
+                <input type="text" name="cause" id="casue" required>
+            </label>
+            <label for="inverse">
+                <p>對造</p>
+                <input type="text" name="inverse" id="inverse" placeholder="ex:XXX (可空白)" onkeyup="toUpperCase();"/>
+            </label>
+            <label for="contract_lawyer">
+                <p>承辦律師</p>
+                <input type="text" name="contract_lawyer" id="contract_lawyer" placeholder="(可空白)">
+            </label>
+            <input type="submit" value="建立">
+        </form>
+    </div>
+{% endblock %}

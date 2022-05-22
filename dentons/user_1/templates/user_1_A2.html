@@ -1,0 +1,35 @@
+{% extends "user_1_base.html" %}
+{% block title %}利益衝突檢索{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_A2.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="Profit_search_page">
+        <form class="profit_search" action="{{ url_for('user_1.A2') }}" method="POST">
+            <label class="title">
+                <h2>利益衝突檢索</h2>
+                <input type="text" name="profit_search_input" id="profit_search_input" placeholder="請輸入姓名" required>
+            </label>
+            <input type="submit" value="search">
+        </form>
+        {% if data_exist %}
+            <table class="search_data">
+                {% for Case_id, date_time, Client_name, cause, inverse, contract_lawyer, over_or_not in search_data %}
+                    <tr>
+                        <td>{{ Case_id }}</td>
+                        <td>{{ date_time }}</td>
+                        <td>{{ Client_name }}</td>
+                        <td>{{ cause }}</td>
+                        <td>{{ inverse }}</td>
+                        <td>{{ contract_lawyer }}</td>
+                        <td>{{ over_or_not }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <div class="message">
+                <h3>{{ msg }}</h3>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

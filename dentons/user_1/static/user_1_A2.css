@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+}
+
+.Profit_search_page {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #9C5FB5;
+}
+#profit_search_input {
+    width: auto;
+    height: 25px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.profit_search input[type="submit"] {
+    transition: 0.5s;
+    border: 0px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #9C5FB5;
+}
+.profit_search input[type="submit"]:hover {
+    background-color: #6D2E91;
+    cursor: pointer;
+}
+.title h2 {
+    margin: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+table{
+    margin-top: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+td {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.message {
+    display: block;
+}
+
+.message h3 {
+    color: white;
+}

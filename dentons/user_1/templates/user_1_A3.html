@@ -1,0 +1,15 @@
+{% extends "user_1_base.html" %}
+{% block title %}案件查詢{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_A3.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="case_search">
+        <h2>您所登入的案件為下列幾項</h2>
+        {% if table %}
+            {{ table }}
+        {% else %}
+            <p>{{ msg }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

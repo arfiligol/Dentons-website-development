@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+.case_edit {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 25px 50px;
+    border-radius: 10px;
+    background-color: #9C5FB5;
+}
+
+.case_edit p {
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #6D2E91;
+}
+
+.case_edit input {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.case_edit input[type="submit"] {
+    transition: 0.5s;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #9C5FB5;
+}
+
+.case_edit input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:#682482;
+}
+.case_edit select {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+

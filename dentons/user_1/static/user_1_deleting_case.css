@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+}
+
+.deleting_case {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 25px 50px;
+    border-radius: 10px;
+    background-color:#9C5FB5;
+}
+
+.deleting_case form p{
+    display: flex;
+    font-size: 50px;
+    color: white;
+}
+.deleting_case form input {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.deleting_case form input[type="submit"] {
+    transition: 0.5s;
+    padding: 10px;
+    color: white;
+    background-color: #9C5FB5;
+}
+
+.deleting_case form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color:#682482;
+}
+
+.deleting_case form a {
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 12.5px 10px;
+    width: auto;
+    height: auto;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #9C5FB5;
+}
+
+.deleting_case form a:hover {
+    cursor: pointer;
+    background-color:#682482;
+}

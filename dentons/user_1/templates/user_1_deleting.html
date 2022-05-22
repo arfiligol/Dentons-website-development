@@ -1,0 +1,14 @@
+{% extends "user_1_base.html" %}
+{% block title %}案件資料刪除{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_deleting_case.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="deleting_case">
+        <form action="{{ url_for('user_1.deleting', Case_id=Case_id) }}" method="POST">
+            <p>確定要刪除案件?</p>
+            <input type="submit" value="確定">
+            <a href="{{ url_for('user_1.A3') }}">返回</a>
+        </form>
+    </div>
+{% endblock %}

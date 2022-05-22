@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background-color: #6D2E91;
+}
+
+.title_block {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-color: #9C5FB5;
+}
+
+.title_block h1 {
+    color: white;
+    margin: 0px;
+}
+
+.login_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#login{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px
+}
+
+.login_block h1 {
+    margin: 0px;
+    color: #682482;
+}
+
+.account_block input {
+    margin: 0px 1px;
+    width: 250px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.account_block label {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9C5FB5; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 2px;
+}
+[type="submit"] {
+    transition: 0.5s;
+    width: 80px;
+    height: 40px;
+    border: white;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #9C5FB5;
+}
+[type="submit"]:hover {
+    background-color: #6D2E91;
+    cursor: pointer;
+}

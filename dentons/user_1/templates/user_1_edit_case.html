@@ -1,0 +1,37 @@
+{% extends "user_1_base.html" %}
+{% block title %}案件資料更改{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_edit_case.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="case_edit">
+        <form action="{{ url_for('user_1.edit', Case_id=Case_id) }}" method="POST">
+            <label for="Client_name">
+                <p>Client_name</p>
+                <input type="text" name="Client_name" id="Client_name" placeholder="{{ Client_name }}">
+            </label>
+            <label for="Cause">
+                <p>Cause</p>
+                <input type="text" name="Cause" id="Cause" placeholder="{{ Cause }}">
+            </label>
+            <label for="Inverse">
+                <p>Inverse</p>
+                <input type="text" name="Inverse" id="Inverse" placeholder="{{ Inverse }}">
+            </label>
+            <label for="Contract_lawyer">
+                <p>Contract_lawyer</p>
+                <input type="text" name="Contract_lawyer" id="Contract_lawyer" placeholder="{{ Contract_lawyer }}">
+            </label>
+            <label for="Over_or_not">
+                <p>Over_or_not</p>
+                <select name="Over_or_not">
+                    {% for over_id, over_or_not in over_or_not %}
+                        <option value="{{ over_id }}">{{ over_or_not }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+            <br>
+            <input type="submit" value="修改">
+        </form>
+    </div>
+{% endblock %}

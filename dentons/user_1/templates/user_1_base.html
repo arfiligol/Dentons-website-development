@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('user_1.static', filename='user_1_base.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="MENU">
+              <h2>MENU</h2>
+            </div>
+            <div class="nav_button">
+              <div class="nav_func_column">
+                <a href="{{ url_for('user_1.A1') }}">案件登入</a>
+                <a href="{{ url_for('user_1.A2') }}">利衝檢索</a>
+                <a href="{{ url_for('user_1.A3') }}">案件查詢</a>
+              </div>
+              <div class="logout">
+                <a href="{{ url_for('Logout.logout')}}">登出</a>
+              </div>
+            </div>
+          </nav>
+          {% block content %}{% endblock %}
+    </body>
+</html>
